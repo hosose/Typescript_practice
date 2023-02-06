@@ -1,10 +1,10 @@
-var hososese = {
+const hososese = {
     name: 'hosose',
     extraInfo: {
-        favFood: 'maratang'
-    }
+        favFood: 'maratang',
+    },
 };
-var jack = {
+const jack = {
     name: 'jack',
-    extraInfo: null
+    extraInfo: null,
 };

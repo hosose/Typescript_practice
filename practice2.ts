@@ -8,13 +8,13 @@ const 더하기 = (a: number, b: number) => a + b;
 const 덧셈: Add = (a, b) => a + b;
 
 //overloading(vscode에서는 overload가 안되는데 playground에서는 됩니다...)
-type Config = {
+type Configg = {
   path: string;
   state: object;
 };
 type Push = {
   (path: string): void;
-  (config: Config): void;
+  (config: Configg): void;
 };
 
 const push: Push = (config) => {

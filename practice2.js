@@ -1,9 +1,9 @@
 function add(a, b) {
     return a + b;
 }
-var 더하기 = function (a, b) { return a + b; };
-var 덧셈 = function (a, b) { return a + b; };
-var push = function (config) {
+const 더하기 = (a, b) => a + b;
+const 덧셈 = (a, b) => a + b;
+const push = (config) => {
     if (typeof config === 'string') {
         console.log(config);
     }
@@ -11,16 +11,15 @@ var push = function (config) {
         console.log(config.path, config.state);
     }
 };
-var superPrint = function (arr) {
-    arr.forEach(function (i) { return console.log(i); });
+const superPrint = (arr) => {
+    arr.forEach((i) => console.log(i));
 };
 superPrint([1, 2, 3, 4]);
 superPrint([true, false]);
 superPrint(['a', 'b', 'c']);
 superPrint([1, 2, 3, true, false, 'a', 'b']);
-var genericFunc = function (a, b) { return a[1]; };
-var n = genericFunc([1, 2, 3, 4], 'a');
-var boolean = genericFunc([true, false], 4);
-var string = genericFunc(['a', 'b', 'c'], false);
-var mix = genericFunc([1, 2, 3, true, false, 'a', 'b'], []);
-console.log(n);
+const genericFunc = (a, b) => a[1];
+const n = genericFunc([1, 2, 3, 4], 'a');
+const boolean = genericFunc([true, false], 4);
+const string = genericFunc(['a', 'b', 'c'], false);
+const mix = genericFunc([1, 2, 3, true, false, 'a', 'b'], []);

@@ -1,3 +1,4 @@
+//추상 class는 new 로 새로운 class를 생성할 수 없지만
 abstract class User {
   constructor(
     private firstNmae: string,
