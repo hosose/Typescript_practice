@@ -4,7 +4,9 @@
   "type": "module",
   "description": "",
   "main": "class.js",
-  "scripts": {},
+  "scripts": {
+    "dev": "nodemon --exec ts-node-esm making_block/index.ts"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/hosose/Typescript_practice.git"
@@ -14,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/hosose/Typescript_practice/issues"
   },
-  "homepage": "https://github.com/hosose/Typescript_practice#readme"
+  "homepage": "https://github.com/hosose/Typescript_practice#readme",
+  "devDependencies": {
+    "ts-node": "^10.9.1"
+  }
 }
