@@ -1,8 +1,9 @@
 {
   "compilerOptions": {
-    "target": "ES6",
-    "module": "ESNext",
-    "lib": ["ES6", "dom"],
-    "allowJs": true
+    "target": "ES5",
+    "lib": ["ES6"],
+    "module": "es6",
+    "esModuleInterop": true,
+    "strict": true
   }
 }
