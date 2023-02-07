@@ -39,7 +39,7 @@ class Blockchain {
     this.blocks.push(newblock);
   }
   public getBlocks() {
-    return [...this.blocks];
+    return [...this.blocks]; //이렇게 return하면 hacking으로 block을 추가해도 추가된 block이 나오지 않음
   }
 }
 
